@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:  url(./images/hero_bg.jpg);
+    background-size: cover;
+    background-blend-mode: soft-light;
+    background-color: rgba(2, 2, 25, 0.772);
+}
+
+.firstSection h3{
+    margin-top: 22px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.centerdLogo{
+    margin-top: 22%;
+    color: #ffffff;
+}
+
+.centerdLogo h2{
+    text-align: center;
+    font-size: 53px;
+    letter-spacing: 2.5px;
+}
+
+.centerdLogo p{
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.centerdLogo button{
+    margin: auto 40%;
+    width: 18%;
+    border: 3px solid #ffffff;
+    background: none;
+    color: #ffffff;
+    padding: 12px;
+    letter-spacing: 2.5px;
+    font-size: 16px;
+}
