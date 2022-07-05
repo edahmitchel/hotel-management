@@ -9,6 +9,7 @@ body{
     background-size: cover;
     background-blend-mode: soft-light;
     background-color: rgba(2, 2, 25, 0.772);
+    background-repeat: no-repeat;
 }
 
 .firstSection h3{
@@ -43,4 +44,11 @@ body{
     padding: 12px;
     letter-spacing: 2.5px;
     font-size: 16px;
+    font-weight: lighter;
+}
+
+.centerdLogo button:hover{
+    font-weight: 1000;
+    color: white;
+    background-color: transparent;
 }
