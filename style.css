@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -93,4 +95,17 @@ body{
 
 .nav-link{
     color: #043051;
+    font-family: 'Cairo', sans-serif;
+    letter-spacing: 2.5px;
+}
+
+.card-body p{
+    font-family: 'Titan One', cursive;
+    font-size: 22px;
+}
+
+.card-body .mySpan{
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
 }
