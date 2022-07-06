@@ -102,6 +102,12 @@ body{
     width: 50%;
 }
 
+.navbar-nav li a:hover{
+    font-weight: bold;
+    transition: .5s ease-in;
+    transform: scale(1.05, 1.05);
+}
+
 .nav-link{
     color: #043051;
     font-family: 'Cairo', sans-serif;
