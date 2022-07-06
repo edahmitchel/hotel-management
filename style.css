@@ -48,9 +48,10 @@ body{
 }
 
 .centerdLogo button:hover{
-    font-weight: 1000;
+    font-weight: bold;
     color: white;
     background-color: transparent;
+    transform: scale(1.05, 1.05);
 }
 
 
