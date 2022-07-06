@@ -57,7 +57,15 @@ body{
     color: white;
     background-color: transparent;
     transform: scale(1.05, 1.05);
+    transition: .3s ease-out;
 }
+
+.centerdLogo button a{
+    text-decoration: none;
+    color: white;
+}
+
+
 
 
 /* PRESIDENTIAL_SUITE CSS BEGINS*/
