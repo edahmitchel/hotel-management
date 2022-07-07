@@ -1,11 +1,14 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background:  url(./images/hero_bg.jpg);
+body {
+    background: url(./images/hero_bg.jpg);
     background-size: cover;
     background-blend-mode: soft-light;
     background-color: rgba(2, 2, 25, 0.772);
@@ -17,30 +20,31 @@ body{
     justify-content: space-around;
 } */
 
-.firstSection h3{
+.firstSection h3 {
     margin-top: 32px;
     font-weight: 500;
     letter-spacing: 3px;
+    padding-bottom: 1rem;
 }
 
-.centerdLogo{
-    margin-top: 22%;
+.centerdLogo {
+    margin-top: 16%;
     color: #ffffff;
 }
 
-.centerdLogo h2{
+.centerdLogo h2 {
     text-align: center;
     font-size: 53px;
     letter-spacing: 2.5px;
 }
 
-.centerdLogo p{
+.centerdLogo p {
     text-align: center;
     font-size: 14px;
     font-style: italic;
 }
 
-.centerdLogo button{
+.centerdLogo button {
     margin: auto 40%;
     width: 18%;
     border: 3px solid #ffffff;
@@ -52,29 +56,30 @@ body{
     font-weight: lighter;
 }
 
-.centerdLogo button:hover{
-    font-weight: bold;
+.centerdLogo button:hover {
+    font-weight: 1000;
     color: white;
     background-color: transparent;
     transform: scale(1.05, 1.05);
-    transition: .3s ease-out;
+    text-transform: uppercase;
+
 }
 
-.centerdLogo button a{
+.centerdLogo button a {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
+    font-weight: lighter;
+
 }
-
-
 
 
 /* PRESIDENTIAL_SUITE CSS BEGINS*/
 
-.cardAlign{
+.cardAlign {
     margin-top: 25PX;
 }
 
-.bookings{
+.bookings {
     background: #ffffff;
     padding: 12px;
     height: 75px;
@@ -88,20 +93,37 @@ body{
     float: right;
 } */
 
-.navbar-collapse{
+.navbar-collapse {
     align-items: center;
     justify-content: space-around;
 }
 
-.navbar-nav{
+.navbar-nav {
     justify-content: space-around;
     align-items: center;
     width: 50%;
 }
 
-.nav-link{
-    color: #043051;
+.navbar-nav li a:hover {
+    font-weight: bold;
+    transition: .3s ease-in;
+    transform: scale(1.05, 1.05);
+    border-bottom: 1px solid black;
 }
 
+.nav-link {
+    color: #043051;
+    font-family: 'Cairo', sans-serif;
+    letter-spacing: 2.5px;
+}
 
-/* Xclusive_SUITE CSS BEGINS*/
+.card-body p {
+    font-family: 'Titan One', cursive;
+    font-size: 22px;
+}
+
+.card-body .mySpan {
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
