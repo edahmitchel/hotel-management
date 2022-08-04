@@ -15,27 +15,46 @@ body {
     background-repeat: no-repeat;
 }
 
-/* .firstSection{
+.hambur{
+    cursor: pointer;
+}
+
+.theSideBar{
+    margin-top: 32px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.firstSection{
     display: flex;
-    justify-content: space-around;
-} */
+    justify-content: space-between;
+    align-items: center;
+}
 
 .firstSection h3 {
     margin-top: 32px;
-    font-weight: 500;
+    font-weight: 00;
     letter-spacing: 3px;
     padding-bottom: 1rem;
 }
 
 .centerdLogo {
-    margin-top: 16%;
+    margin-top: 20%;
     color: #ffffff;
 }
 
 .centerdLogo h2 {
     text-align: center;
-    font-size: 53px;
+    font-size: 113px;
+    color: #e3e3e3;
+    font-weight: 600;
     letter-spacing: 2.5px;
+    transition: 0.5s;
+}
+
+.centerdLogo h2:hover {
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
 }
 
 .centerdLogo p {
@@ -70,6 +89,26 @@ body {
     color: #ffffff;
     font-weight: lighter;
 
+}
+
+.backVid{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .backVid{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .backVid{
+        width: auto;
+        height: 100%;
+    }
 }
 
 
@@ -126,4 +165,10 @@ body {
     font-family: sans-serif;
     color: rgb(0, 0, 0);
     font-size: 14px;
+}
+
+.akatsuki{
+    height:40vh;
+    width: 60%;
+    border: 2px solid black;
 }
