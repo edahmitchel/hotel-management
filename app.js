@@ -25,17 +25,26 @@ console.log(JSON.parse(localStorage.getItem("appData", sendData)))
 
 // SENDING TO PAYOUTPAGE
 let gottenInfo = document.querySelector("#gottenInfo");
+// let yourNumb = document.querySelector("#yourNumb");
+// let genderr = document.querySelector("#genderr");
+// let addre = document.querySelector("#addre");
 let info = localStorage.getItem("appData");
-gottenInfo = JSON.parse(info)
-console.log(typeof(info))
-console.log(typeof(gottenInfo))
-document.querySelector("#gottenInfo").innerHTML = gottenInfo
+let yourName = document.querySelector("#yourName");
+// gottenInfo = JSON.parse(info)
+
+
+gottenInfo.textContent = `${firstName}`;
+// yourNumb.textContent = `${userNumber}`;
+// genderr.textContent = `${gender}`;
+// addre.textContent = `${userAddress}`;
+yourName.innerHTML = `${userNumber}`
+console.log(yourName)
+// console.log(typeof(gottenInfo))
+// document.querySelector("#gottenInfo").innerHTML = gottenInfo
 // console.log(gottenInfo)
 // yourName.textContent = `${firstName} ${lastName}`
 
 
-
-console.log("Hello, World!")
 
 // // GETTING FROM LOCAL STORAGE
 // let fgname = localStorage.getItem("firstName", firstName)
