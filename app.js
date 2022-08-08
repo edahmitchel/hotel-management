@@ -18,6 +18,7 @@ let randd = Math.trunc(Math.random() * 10000);
 // console.log(display)
 
 submitBtn.addEventListener('click', (event) => {
+    event.preventDefault();
     let theData = {
         fname: firstName,
         lname: lastName,
@@ -30,7 +31,12 @@ submitBtn.addEventListener('click', (event) => {
     let locale = localStorage.setItem('formData', JSON.stringify(theData))
     // console.log(locale);
     displayForm()
-    event.preventDefault();
+    document.querySelector("#inputNextOfKinNumber").value = " ";
+    document.querySelector("#inputName").value = " ";
+    document.querySelector("#inputLastName").value = " ";
+    document.querySelector("#inputNumber").value = " ";
+    document.querySelector("#inputAddress").value = " ";
+    document.querySelector("#inputNextOfKin").value = " ";
     
 });
 
