@@ -30,17 +30,18 @@ submitBtn.addEventListener('click', (event) => {
     }
     let locale = localStorage.setItem('formData', JSON.stringify(theData))
     // console.log(locale);
-    displayForm()
-    document.querySelector("#inputNextOfKinNumber").value = " ";
-    document.querySelector("#inputName").value = " ";
-    document.querySelector("#inputLastName").value = " ";
-    document.querySelector("#inputNumber").value = " ";
-    document.querySelector("#inputAddress").value = " ";
-    document.querySelector("#inputNextOfKin").value = " ";
+    displayForm();
     
 });
 
 
+
+   /* document.querySelector("#inputNextOfKinNumber").value = " ";
+    document.querySelector("#inputName").value = " ";
+    document.querySelector("#inputLastName").value = " ";
+    document.querySelector("#inputNumber").value = " ";
+    document.querySelector("#inputAddress").value = " ";
+    document.querySelector("#inputNextOfKin").value = " ";*/
 function displayForm(){
     let gotIt = JSON.parse(localStorage.getItem('formData'))
     yourName.textContent = gotIt.fname;
