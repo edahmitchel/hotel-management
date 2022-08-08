@@ -6,12 +6,17 @@ let genderr = document.querySelector("#genderr")
 let addr = document.querySelector("#addr")
 let keym = document.querySelector("#keym")
 let randd = Math.trunc(Math.random() * 10000);
-
 console.log(localStorage.firstName);
 
-yourName.textContent = localStorage.firstName;
-yourNum.textContent = localStorage.userNumber;
-genderr.textContent = localStorage.gender;
-addr.textContent = localStorage.userAddress;
-keym.textContent = localStorage.firstName + randd;
-console.log(randd);
+// yourName.textContent = locale.firstName;
+// yourNum.textContent = localStorage.userNumber;
+// genderr.textContent = localStorage.gender;
+// addr.textContent = localStorage.userAddress;
+// keym.textContent = localStorage.firstName + randd;
+// console.log(randd);
+
+function displayForm(){
+    let gotIt = JSON.parse(localStorage.getItem('formData'))
+    yourName.textContent = gotIt.fname;
+    console.log(gotIt)
+}
