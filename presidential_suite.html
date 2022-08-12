@@ -109,7 +109,7 @@
                   >Bonus: Breakfast, Dinner, Wifi, Massage.</span
                 >
               </p>
-              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Book Now</a>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-dismiss="modal">Book Now</a>
             </div>
           </div>
         </div>
@@ -171,8 +171,12 @@
       </div>
     </div>
     <div class="emptty">
-      <p id="gottenInfo"></p>
-      <p id="yourName"></p>
+      <h3>Your Reservation:</h3>
+      <p id="yourNam">Name:</p>
+      <p id="yourNumber">Phone Num:</p>
+      <p>Days: <input type="number" width="10px" class="col-sm-1" id="days"></p>
+      <p id="resvPass">Reservation pass:</p>
+      <p id="total">Total:</p>
     </div>
 
 
@@ -185,7 +189,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form class="row g-3 needs-validation" validate action="payout.html" method="GET">
+        <form class="row g-3 needs-validation" validate action="" method="GET">
           <div class="col-md-6">
             <label for="inputName" class="form-label">First Name</label>
             <input type="name" class="form-control" id="inputName" required>
@@ -203,6 +207,10 @@
             <label for="inputAddress" class="form-label">Address</label>
             <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
           </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Days</label>
+            <input type="number" class="form-control col-sm-1" id="days" required>
+          </div>
 
           <div class="col-12">
             <label for="inputNextOfKin" class="form-label">Next of Kin</label>
@@ -214,14 +222,14 @@
             <input type="text" class="form-control" id="inputNextOfKinNumber" placeholder="+1(123456789)" required>
           </div>
           
-          <div class="col-md-6">
+          <!-- <div class="col-md-6">
             <label for="inputState" class="form-label">Gender</label>
             <select id="inputState" class="form-select">
               <option>Male</option>
               <option>Female</option>
               <option>Transgender</option>
             </select>
-          </div>
+          </div> -->
           <div class="col-12">
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="gridCheck" required>
