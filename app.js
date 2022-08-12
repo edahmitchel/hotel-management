@@ -9,7 +9,7 @@ const yourNam = document.querySelector("#yourNam")
 const yourNumber = document.querySelector("#yourNumber")
 const resvPass = document.querySelector("#resvPass")
 const total = document.querySelector("#total")
-const days = document.querySelector("#days").value;
+const days = document.querySelector("#dayz").value;
 console.log(days)
 // const gender = document.querySelector("#inputState").value;
 const random = Math.floor(Math.random() * 1000);
@@ -18,27 +18,27 @@ const amount = 999;
 tot = amount * days;
 console.log(tot)
 submitBtn.addEventListener('click', e => {
-    e.preventDefault();
-    let theData = JSON.stringify({
-        fname: firstName,
-        lname: lastName,
-        userNum: userNumber,
-        userAdd: userAddress,
-        nextofKin: nextofKin,
-        dayz: days*1,
-        nexkinNum: nexofkinNumber
+    // e.preventDefault();
+    let theData = {
+        fname: document.querySelector("#inputName").value,
+        lname: document.querySelector("#inputLastName").value,
+        userNum: document.querySelector("#inputNumber").value,
+        userAdd: document.querySelector("#inputAddress").value,
+        nextofKin: document.querySelector("#inputNextOfKin").value,
+        dayz: document.querySelector("#dayz").value,
+        nexkinNum: document.querySelector("#inputNextOfKinNumber").value
         // gend: gender 
-    })
+    }
     const amount = 999;
     tot = amount * days;
     console.log(tot)
-localStorage.setItem('theData', theData)
-localStorage.getItem('theData', theData);
+localStorage.setItem('theDatas', theData)
+localStorage.getItem('theDatas');
     if (localStorage == "") {
         console.log("empty")
     }else{
         localStorage.clear();
-        localStorage.setItem('theData', theData)
+        localStorage.setItem('theData', JSON.stringify(theData))
         displayForm()
         console.log("done")
     }
