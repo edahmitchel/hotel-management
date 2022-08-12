@@ -4,66 +4,76 @@ const userNumber = document.querySelector("#inputNumber").value;
 const userAddress = document.querySelector("#inputAddress").value;
 const nextofKin = document.querySelector("#inputNextOfKin").value;
 const nexofkinNumber = document.querySelector("#inputNextOfKinNumber").value;
-const submitBtn = document.querySelector('#submitBtn')
-const yourNam = document.querySelector("#yourNam")
-const yourNumber = document.querySelector("#yourNumber")
-const resvPass = document.querySelector("#resvPass")
-const total = document.querySelector("#total")
+const submitBtn = document.querySelector("#submitBtn");
+const yourNam = document.querySelector("#yourNam");
+const yourNumber = document.querySelector("#yourNumber");
+const resvPass = document.querySelector("#resvPass");
+const total = document.querySelector("#total");
 const days = document.querySelector("#dayz").value;
-console.log(days)
+console.log(days);
 // const gender = document.querySelector("#inputState").value;
-const random = Math.floor(Math.random() * 1000);
+// let rand = (length = 8) => {
+//     return Math.random().toString(16).substring(2, length);
+// }
 
 const amount = 999;
 tot = amount * days;
-console.log(tot)
-submitBtn.addEventListener('click', e => {
-    // e.preventDefault();
+console.log(tot);
+submitBtn.addEventListener("click", (e) => {
+    e.preventDefault();
     let theData = {
-        fname: document.querySelector("#inputName").value,
-        lname: document.querySelector("#inputLastName").value,
-        userNum: document.querySelector("#inputNumber").value,
-        userAdd: document.querySelector("#inputAddress").value,
-        nextofKin: document.querySelector("#inputNextOfKin").value,
-        dayz: document.querySelector("#dayz").value,
-        nexkinNum: document.querySelector("#inputNextOfKinNumber").value
-        // gend: gender 
-    }
-    const amount = 999;
-    tot = amount * days;
-    console.log(tot)
-localStorage.setItem('theDatas', theData)
-localStorage.getItem('theDatas');
-    if (localStorage == "") {
-        console.log("empty")
-    }else{
-        localStorage.clear();
-        localStorage.setItem('theData', JSON.stringify(theData))
-        displayForm()
-        console.log("done")
-    }
-    // let arr = [];
-    // arr.push(theData)
-    // localStorage.setItem('data', JSON.stringify(theData))
-    
-})
+    fname: document.querySelector("#inputName").value,
+    lname: document.querySelector("#inputLastName").value,
+    userNum: document.querySelector("#inputNumber").value,
+    userAdd: document.querySelector("#inputAddress").value,
+    nextofKin: document.querySelector("#inputNextOfKin").value,
+    dayz: document.querySelector("#dayz").value,
+    nexkinNum: document.querySelector("#inputNextOfKinNumber").value,
+    // gend: gender
+};
 
-function displayForm(){
-    let gotIt = JSON.parse(localStorage.getItem('theData'))
-    yourNam.textContent = "Name: " + gotIt.fname + " " + gotIt.lname;
-    yourNumber.textContent = "Phone Number: " + gotIt.userNum;
-    // console.log(gotIt)
+  
+//   console.log("nam" + random(36));
+ 
+  localStorage.setItem("theDatas", theData);
+  localStorage.getItem("theDatas");
+
+  if (localStorage == "") {
+    console.log("empty");
+  } else {
+    localStorage.clear();
+    localStorage.setItem("theData", JSON.stringify(theData));
+    console.log("done");
+    displayForm();
+  }
+  // let arr = [];
+  // arr.push(theData)
+  // localStorage.setItem('data', JSON.stringify(theData))
+});
+
+function displayForm() {  
+//     const rand = (length = 38) => {
+//     return Math.random().toString(15).substring(2, length);
+// };
+let rand = Math.floor(Math.random() * 1000)
+ const amount = 999;
+  tot = amount * days;
+  console.log(tot);
+  let gotIt = JSON.parse(localStorage.getItem("theData"));
+  yourNam.textContent = "Name: " + gotIt.fname + " " + gotIt.lname;
+  yourNumber.textContent = "Phone Number: " + gotIt.userNum;
+  resvPass.textContent = "Reservation password: " + rand;
+  total.textContent = "Total: " + "$" + tot;
+  // console.log(gotIt)
 }
 
-
-
 //DISPLAY GOTTEN
-let yourName = document.querySelector("#yourName")
-let yourNum = document.querySelector("#yourNumb")
-let genderr = document.querySelector("#genderr")
-let addr = document.querySelector("#addr")
-let keym = document.querySelector("#keym")
-let randd = Math.trunc(Math.random() * 10000);
+// let yourName = document.querySelector("#yourName");
+// let yourNum = document.querySelector("#yourNumb");
+// let genderr = document.querySelector("#genderr");
+// let addr = document.querySelector("#addr");
+// let keym = document.querySelector("#keym");
+// let randd = Math.trunc(Math.random() * 10000);
 // console.log(display)
 
 // submitBtn.addEventListener('click', (event) => {
@@ -75,7 +85,7 @@ let randd = Math.trunc(Math.random() * 10000);
 //         userAdd: userAddress,
 //         nextofKin: nextofKin,
 //         nexkinNum: nexofkinNumber,
-//         gend: gender 
+//         gend: gender
 //     }
 
 //     if (theData.value === null) {
@@ -90,18 +100,15 @@ let randd = Math.trunc(Math.random() * 10000);
 //     // document.querySelector("#inputLastName").value = " ";
 //     // document.querySelector("#inputNumber").value = " ";
 //     // document.querySelector("#inputAddress").value = " ";
-//     // document.querySelector("#inputNextOfKin").value = " "; 
+//     // document.querySelector("#inputNextOfKin").value = " ";
 // });
 
-
-
-   /* document.querySelector("#inputNextOfKinNumber").value = " ";
+/* document.querySelector("#inputNextOfKinNumber").value = " ";
     document.querySelector("#inputName").value = " ";
     document.querySelector("#inputLastName").value = " ";
     document.querySelector("#inputNumber").value = " ";
     document.querySelector("#inputAddress").value = " ";
     document.querySelector("#inputNextOfKin").value = " ";*/
-
 
 //DISPLAYING THE FORM
 
@@ -118,7 +125,6 @@ let randd = Math.trunc(Math.random() * 10000);
 localStorage.setItem("appData", sendData);
 console.log(JSON.parse(localStorage.getItem("appData", sendData)))*/
 
-
 // SENDING TO PAYOUTPAGE
 // let gottenInfo = document.querySelector("#gottenInfo");
 // let yourNumb = document.querySelector("#yourNumb");
@@ -127,7 +133,6 @@ console.log(JSON.parse(localStorage.getItem("appData", sendData)))*/
 // let info = localStorage.getItem("appData");
 // let yourName = document.querySelector("#yourName");
 // gottenInfo = JSON.parse(info)
-
 
 // gottenInfo.textContent = `${firstName}`;
 // yourNumb.textContent = `${userNumber}`;
@@ -139,8 +144,6 @@ console.log(JSON.parse(localStorage.getItem("appData", sendData)))*/
 // document.querySelector("#gottenInfo").innerHTML = gottenInfo
 // console.log(gottenInfo)
 // yourName.textContent = `${firstName} ${lastName}`
-
-
 
 // // GETTING FROM LOCAL STORAGE
 // let fgname = localStorage.getItem("firstName", firstName)
@@ -165,15 +168,11 @@ console.log(JSON.parse(localStorage.getItem("appData", sendData)))*/
 
 // console.log(displayingTheStoredItems(gotten))
 
-
 // display.textContent = gotten;
-
 
 // let akatsuki = document.querySelector('akatsuki');
 
 // akatsuki.textContent = parsedDATA
-
-
 
 /* let getLocal = localStorage.getItem('formData');
 
@@ -186,4 +185,3 @@ console.log(JSON.parse(localStorage.getItem("appData", sendData)))*/
     itemsObj.push(theData.value)
 
     let locale = localStorage.setItem('formData', JSON.stringify(theData)) */
-
